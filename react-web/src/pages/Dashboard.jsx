@@ -84,7 +84,7 @@ function Dashboard() {
 
         <img
           style={{ width: '100%', height: '180px', borderRadius: '6px', objectFit: 'cover' }}
-          src="src/assets/cover.jpg"
+          src="cover.jpg"
           alt="cover"
         />
 
