@@ -10,6 +10,9 @@ let authorizedAxiosInstance = axios.create({
   timeout: 1000 * 60 * 10,
   withCredentials: true
 })
+
+authorizedAxiosInstance.defaults.baseURL = import.meta.env.VITE_API_URL || 'https://twofa-two-factor-authentication.onrender.com'
+
 authorizedAxiosInstance.interceptors.request.use((config) => {
   return config
 }, (error) => {
