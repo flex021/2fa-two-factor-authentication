@@ -40,10 +40,9 @@ yarn dev
 
 ## Demo Users
 
-| Email                   | Password       | 2FA Status | Access Level                                    |
-|-------------------------|----------------|------------|-----------------------------------------------|
-| `demo-2fa@gmail.com`    | `demo@123`     | Enabled    | Full access with 2FA verification required    |
-| `test-2fa@gmail.com`    | `test@123`     | Setup      | Pending 2FA setup completion                  |
+| Email                        | Password                                    |
+|-------------------------     |-------------------------|
+| `congthongdeft@gmail.com`    | `congthongdeft@123`     |
 
 
 ## Documentation (README full)
