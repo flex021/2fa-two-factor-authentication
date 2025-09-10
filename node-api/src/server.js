@@ -22,19 +22,13 @@ const START_SERVER = () => {
 
   app.use('/v1', APIs_V1)
 
-  const LOCAL_DEV_APP_PORT = 8018
-  const LOCAL_DEV_APP_HOST = 'localhost'
+  const PORT = process.env.PORT || 8018
+  const HOST = process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost'
   const AUTHOR = 'ideft'
 
-  if (process.env.BUILD_MODE === 'production') {
-    app.listen(process.env.PORT, () => {
-      console.log(`Production: Hi ${AUTHOR}, Back-end Server is running successfully at Port: ${process.env.PORT}`)
-    })
-  } else {
-    app.listen(LOCAL_DEV_APP_PORT, LOCAL_DEV_APP_HOST, () => {
-      console.log(`Local DEV: Hello ${AUTHOR}, Back-end Server is running successfully at Host: ${LOCAL_DEV_APP_HOST} and Port: ${LOCAL_DEV_APP_PORT}`)
-    })
-  }
+  app.listen(PORT, HOST, () => {
+    console.log(`${process.env.NODE_ENV === 'production' ? 'PRODUCTION' : 'LOCAL DEV'}: Hello ${AUTHOR}, Back-end Server is running successfully at Host: ${HOST} and Port: ${PORT}`)
+  })
 }
 
 (async () => {
