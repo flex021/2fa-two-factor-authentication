@@ -103,7 +103,8 @@ yarn dev
 project/
 ├── react-web/   # React frontend application
 ├── node-api/   # Express API server
-└── README.md                 # This file
+└── README.md                 
+└── README.full.md                 # This file
 ```
 
 ## Development & Production Scripts
@@ -139,7 +140,6 @@ npm run lint         # Run ESLint for code validation
 - `otplib` - TOTP implementation for 2FA
 - `qrcode` - QR code generation for authenticator apps
 - `cors` - Cross-Origin Resource Sharing configuration
-- `bcrypt` - Password hashing and validation
 - `cookie-parser` - Cookie handling middleware
 - `nedb-promises` - Embedded database for user data
 - `@babel/core` - ES6+ transpilation for Node.js compatibility
